@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayesha's Corner Menu</title>
+<meta name="description" content="Ayesha's Corner - Food, drinks and snacks menu">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f7f7f8;--card:#fff;--text:#171717;--muted:#777;--accent:#6c4cff;--accent2:#9a7cff}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+.hero{padding:55px 20px 40px;text-align:center;background:linear-gradient(135deg,#171717,#30235e);color:#fff}
+.logo{width:78px;height:78px;margin:0 auto 16px;border-radius:22px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;font-size:25px;font-weight:800;box-shadow:0 12px 30px #0005}
+.hero h1{font-size:clamp(30px,8vw,52px);letter-spacing:-1px}
+.hero p{margin-top:8px;color:#ddd;font-size:16px}
+.container{max-width:900px;margin:auto;padding:25px 16px 60px}
+.tabs{display:flex;gap:10px;justify-content:center;margin:0 0 25px;position:sticky;top:0;padding:12px 0;background:var(--bg);z-index:5}
+.tabs a{padding:10px 18px;border-radius:999px;background:#fff;color:#333;text-decoration:none;font-weight:700;box-shadow:0 3px 12px #0000000c}
+.tabs a:hover{background:var(--accent);color:#fff}
+.section{margin-top:28px}
+.section h2{font-size:25px;margin-bottom:14px}
+.section h2 span{display:block;font-size:12px;color:var(--accent);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:3px}
+.card{background:var(--card);border-radius:18px;padding:18px;margin:12px 0;box-shadow:0 5px 20px #0000000a}
+.card h3{font-size:18px;margin-bottom:10px}
+.item{display:flex;justify-content:space-between;gap:15px;padding:10px 0;border-bottom:1px solid #eee}
+.item:last-child{border-bottom:0}
+.item .name{font-weight:600}
+.price{font-weight:800;color:var(--accent);white-space:nowrap}
+.note{font-size:13px;color:var(--muted);margin-top:5px}
+.price-table{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:12px}
+.price-pill{background:#f3f0ff;border-radius:12px;padding:10px;text-align:center;font-weight:700}
+.price-pill small{display:block;color:var(--muted);font-weight:600}
+footer{text-align:center;padding:25px;color:var(--muted);font-size:13px}
+@media(max-width:500px){.price-table{grid-template-columns:1fr 1fr 1fr}.item{font-size:14px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="logo">AC</div>
+  <h1>Ayesha's Corner</h1>
+  <p>Food • Drinks • Snacks</p>
+</header>
+
+<main class="container">
+<nav class="tabs">
+  <a href="#drinks">Drinks</a>
+  <a href="#food">Food</a>
+</nav>
+
+<section id="drinks" class="section">
+  <h2><span>Refreshing choices</span>Drinks</h2>
+
+  <div class="card">
+    <h3>MILKTEA-TING PREMIUM</h3>
+    <div class="price-table">
+      <div class="price-pill"><small>Small</small>₱49</div>
+      <div class="price-pill"><small>Mid</small>₱69</div>
+      <div class="price-pill"><small>Large</small>₱89</div>
+    </div>
+    <div class="item"><span class="name">Red Velvet</span></div>
+    <div class="item"><span class="name">Black Forest</span></div>
+    <div class="item"><span class="name">Dark Chocolate</span></div>
+    <div class="item"><span class="name">Matcha</span></div>
+    <div class="item"><span class="name">Caramelized Sugar</span></div>
+    <div class="item"><span class="name">Hazel Nut</span></div>
+    <div class="item"><span class="name">Cookies and Cream / Oreo</span></div>
+  </div>
+
+  <div class="card">
+    <h3>MILKTEA-TING CLASSIC</h3>
+    <div class="item"><span class="name">Chocolate</span><span class="price">Price TBD</span></div>
+    <div class="item"><span class="name">Taro</span><span class="price">Price TBD</span></div>
+    <div class="item"><span class="name">Wintermelon</span><span class="price">Price TBD</span></div>
+    <div class="item"><span class="name">Mango Cheesecake</span><span class="price">Price TBD</span></div>
+    <div class="item"><span class="name">Hokkaido</span><span class="price">Price TBD</span></div>
+  </div>
+
+  <div class="card">
+    <h3>FRUIT SODA DRINKS</h3>
+    <div class="item"><span class="name">Blueberry</span><span class="price">Price TBD</span></div>
+    <div class="item"><span class="name">Strawberry</span><span class="price">Price TBD</span></div>
+    <div class="item"><span class="name">Blue Lemonade</span><span class="price">Price TBD</span></div>
+    <div class="item"><span class="name">Lychee</span><span class="price">Price TBD</span></div>
+    <div class="item"><span class="name">Green Apple</span><span class="price">Price TBD</span></div>
+    <div class="item"><span class="name">Four Seasons</span><span class="price">Price TBD</span></div>
+  </div>
+</section>
+
+<section id="food" class="section">
+  <h2><span>Meals &amp; snacks</span>Food</h2>
+
+  <div class="card">
+    <h3>RICE TOPPINGS</h3>
+    <div class="item"><span class="name">Shomai Rice</span><span class="price">₱39</span></div>
+    <div class="item"><span class="name">Tocino Rice</span><span class="price">₱39</span></div>
+    <div class="item"><span class="name">Beef Tapa</span><span class="price">₱39</span></div>
+    <div class="item"><span class="name">Hotdog Rice</span><span class="price">₱39</span></div>
+    <div class="item"><span class="name">Shawarma Rice</span><span class="price">₱69</span></div>
+  </div>
+
+  <div class="card">
+    <h3>ADD-ONS</h3>
+    <div class="item"><span class="name">Egg</span><span class="price">₱15</span></div>
+    <div class="item"><span class="name">Ham</span><span class="price">₱15</span></div>
+    <div class="item"><span class="name">Rice</span><span class="price">₱15</span></div>
+    <div class="item"><span class="name">Patty</span><span class="price">₱15</span></div>
+  </div>
+
+  <div class="card">
+    <h3>SNACKS</h3>
+    <div class="item"><span class="name">Shomai — 3 pcs</span><span class="price">₱20</span></div>
+    <div class="item"><span class="name">Dynamite — pcs</span><span class="price">₱35</span></div>
+    <div class="item"><span class="name">Cheese Stick — 4 pcs</span><span class="price">₱20</span></div>
+    <div class="item"><span class="name">Shawarma Fries / Natus</span><span class="price">₱79</span></div>
+    <div class="item"><span class="name">Burger</span><span class="price">₱35</span></div>
+    <div class="item"><span class="name">Burger Overload</span><span class="price">₱69</span></div>
+    <div class="item"><span class="name">Hotdog Bun</span><span class="price">₱35</span></div>
+  </div>
+</section>
+</main>
+
+<footer>Ayesha's Corner • Menu</footer>
+</body>
+</html>
